@@ -1,0 +1,218 @@
+/* Hero Content Animation */
+.hero-content h1 {
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  .hero-content p {
+    animation: fadeInUp 1.5s ease-in-out 0.5s;
+  }
+  
+  .icon-button {
+    animation: fadeIn 2s ease-in-out 1s;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* Card Animation */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Carousel Animation */
+.carousel-item {
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /* Blog Post Animation */
+.blog-post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  /* Customer Review Animation */
+.customer-review {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .customer-review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  /* Footer Animation */
+.footer-links li {
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-links li:hover {
+    transform: translateX(10px);
+  }
+  
+  .social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #007bff !important;
+  }
+/* Fade-in effect for the image and text */
+#section-1 {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Scale-up effect for the video link */
+.video-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-link:hover {
+  transform: scale(1.1);
+}
+
+/* Hover effect for the video link */
+.video-link i {
+  transition: color 0.3s ease-in-out;
+}
+
+.video-link:hover i {
+  color: #007bff;
+}
+
+.video-link span {
+  transition: color 0.3s ease-in-out;
+}
+
+.video-link:hover span {
+  color: #007bff;
+}
+
+/* Additional styles for better appearance */
+#img {
+  animation-delay: 0.5s;
+}
+
+#about-heading {
+  animation-delay: 1s;
+}
+
+.video-link {
+  cursor: pointer;
+}
+
+.bi-play-btn-fill {
+  font-size: 24px;
+  margin-right: 10px;
+}
+#destination {
+  text-align: center; /* Center-align text */
+  padding: 80px 20px; /* Add padding for spacing */
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 40px auto; /* Center the section horizontally */
+  max-width: 800px; /* Limit width for better readability */
+  opacity: 0; /* Start with invisible content */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fadeInUp 1s ease-out forwards; /* Apply animation */
+}
+
+#destination h1 {
+  font-size: 5vmin; /* Responsive font size */
+  font-weight: bold; /* Bold heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px; /* Space below the heading */
+  opacity: 0; /* Start with invisible heading */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fadeInUp 1s ease-out 0.5s forwards; /* Delay animation */
+}
+
+#destination p {
+  font-size: 2.5vmin; /* Responsive font size */
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.6; /* Improve readability */
+  max-width: 600px; /* Limit paragraph width */
+  margin: 0 auto; /* Center the paragraph */
+  opacity: 0; /* Start with invisible paragraph */
+  transform: translateY(20px); /* Start slightly below */
+  animation: fadeInUp 1s ease-out 1s forwards; /* Delay animation */
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
